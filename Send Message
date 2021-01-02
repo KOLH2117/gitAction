@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const msgs = [
+const msgs = [ "hello"
     
 ]
 
@@ -17,7 +17,7 @@ function diffDate() {
 
 const sendMessage = async () => {
     const i = diffDate();
-    let url = "https://XXXXX.herokuapp.com/api/send"
+    let url = "https://botmsg1.herokuapp.com/api/send"
     const { data } = await axios.get(url, { params: { uid: YYYYYYY, msg: msgs[i]} });
 };
 
